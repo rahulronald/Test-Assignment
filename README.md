@@ -13,7 +13,8 @@ This test is divided into 3 sections:
 ## Add-ins or APIs Used:
 * Selenium WebDriver APIs (Web Automation)
 * Gecko Driver (Firefox Support)
-* TestNG (For Test framework)
+* Maven 
+* TestNG 
 * Apache POI (For Excel reading & writing)
 * Log4J (For Logging)
 * Rest Assured (Web Service Testing)
@@ -24,21 +25,9 @@ This test is divided into 3 sections:
 
 ## Pre-Requisites:
 Once you have import the entire project in your Eclipse, please follow the below steps
-### TestNG should be added to Eclipse 
-* In Eclipse, navigate to `Help > Install New Software`
-* Click on the link **Available Software Sites**
-* Look for **TestNG**
-* If TestNG is not available, follow steps to add it
-* Simple click on **Add** button 
-* Enter Name: **TestNG**
-* Enter Location: **http://beust.com/eclipse**
-* Hit OK button
-* Once TestNG is available, select it and click Next and then Finish
-
 ### Edit Log4j file locations
 * Open **log4j.properties** file under `src > test > java`
 * Edit the **Application & Selenium log files locations** to your location Workspace location 
-
 
 ## Implementation Explanation:
 I have used **Maven project** implementation in eclipse. 
@@ -79,14 +68,13 @@ Important test data is to be entered in **testdata.xlsx**.
 It has 3 tabs each for individual section. 
 
 ## Instructions to execute the test
-The entire test suite is controlled by the **TestNG.xml** runner file, which is located under `src > test > resources > runner`. 
-Simply, right click on the **TestNG.xml** file and select Run As : **TestNG Suite**. 
+The entire test suite is controlled by the **POM.xml** file, which is located under `project`. 
+Simply, right click on the **POM.xml** file and select Run As : **Maven Test**. 
 
 ## Test Result:
 
 ### Test Report:
-After the test is completed, the **Test Report** is generated in the Workspace location under `Project (ABC) > test-output > emailable-report.html`. You can open it in any browser to have a look for the Consolidated Test Report. 
-Sample has been attached in the email.
+After the test is completed, the **Test Report** is generated in the Workspace location under `Project (ABC) > target > surefire-reports > emailable-report.html`. You can open it in any browser to have a look for the Consolidated Test Report. 
 
 ### Test Result Screenshots:
 Also, at every important step, **screenshots** are captured and stored under `Project (ABC) > test-output > screenShots` folder location. All screenshots are stored with timestamp as their name.
