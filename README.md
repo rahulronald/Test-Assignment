@@ -8,7 +8,7 @@ This test is divided into 3 sections:
 3.	API Integration Test (3 Test Requirements)
 
 ## Tools Used:
-1.	Eclipse Neo
+1.	Eclipse Neon
 
 ## Add-ins or APIs Used:
 * Selenium WebDriver APIs (Web Automation)
